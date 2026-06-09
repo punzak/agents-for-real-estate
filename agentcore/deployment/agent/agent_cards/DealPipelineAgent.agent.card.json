@@ -1,0 +1,17 @@
+{
+  "name": "DealPipelineAgent",
+  "description": "Tracks transactions and manages deal pipelines for real estate agents.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/dealpipelineagent",
+  "skills": [
+    "pipeline_management",
+    "deadline_tracking",
+    "risk_assessment"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

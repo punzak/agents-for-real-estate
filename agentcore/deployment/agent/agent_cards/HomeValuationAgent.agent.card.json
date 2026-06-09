@@ -1,0 +1,17 @@
+{
+  "name": "HomeValuationAgent",
+  "description": "Provides instant AI-powered home valuations with market analysis.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/homevaluationagent",
+  "skills": [
+    "home_valuation",
+    "comp_analysis",
+    "market_timing"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

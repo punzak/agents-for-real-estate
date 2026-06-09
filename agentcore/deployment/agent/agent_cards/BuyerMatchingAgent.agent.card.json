@@ -1,0 +1,17 @@
+{
+  "name": "BuyerMatchingAgent",
+  "description": "Matches home buyers with ideal properties based on lifestyle, preferences, and budget.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/buyermatchingagent",
+  "skills": [
+    "property_matching",
+    "buyer_profiling",
+    "neighborhood_analysis"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "MarketIntelligenceAgent",
+  "description": "Analyzes market trends, pricing, and investment opportunities.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/marketintelligenceagent",
+  "skills": [
+    "market_analysis",
+    "investment_roi",
+    "comp_analysis"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

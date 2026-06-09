@@ -1,0 +1,395 @@
+{
+    "tabConfigurations": {
+        "buyer-tab": {
+            "id": "buyer-tab",
+            "title": "Home Buyer",
+            "description": "AI-Powered Home Search for Buyers",
+            "icon": "person_search",
+            "defaultAgent": "RealtorOrchestratorAgent",
+            "availableAgents": [
+                "RealtorOrchestratorAgent",
+                "BuyerMatchingAgent",
+                "HomeValuationAgent",
+                "MarketIntelligenceAgent",
+                "NeighborhoodExpertAgent",
+                "MarketTrendsAgent"
+            ],
+            "scenarios": [
+                {
+                    "id": "find-home",
+                    "title": "🏠 Find My Perfect Home",
+                    "description": "AI-powered property matching based on lifestyle and preferences",
+                    "query": "I'm looking for a 3-4 bedroom home in Austin, TX for a family with two kids (ages 8 and 12). Budget is $550,000-$650,000. We need good schools (rated 8+), a home office, and prefer to be within 20 minutes of downtown. We love outdoor activities so proximity to parks and trails is important. What properties would you recommend?",
+                    "category": "Home Search",
+                    "agentType": "BuyerMatchingAgent"
+                },
+                {
+                    "id": "first-time-buyer",
+                    "title": "🎓 First-Time Buyer Guide",
+                    "description": "Personalized guidance for first-time home buyers",
+                    "query": "I'm a first-time buyer with $80,000 saved and household income of $150,000. I'm looking in Austin, TX. What price range should I target? What neighborhoods offer the best value? Walk me through the process.",
+                    "category": "Getting Started",
+                    "agentType": "BuyerMatchingAgent"
+                },
+                {
+                    "id": "neighborhood-info",
+                    "title": "🏘️ Neighborhood Deep Dive",
+                    "description": "Schools, safety, amenities, and community insights",
+                    "query": "Tell me everything about the Mueller neighborhood in Austin - schools, safety, walkability, amenities, and home value trends. Is it good for a young professional couple planning to start a family?",
+                    "category": "Research",
+                    "agentType": "NeighborhoodExpertAgent"
+                },
+                {
+                    "id": "market-analysis-buyer",
+                    "title": "📊 Is Now a Good Time to Buy?",
+                    "description": "Market conditions and timing advice for buyers",
+                    "query": "Give me a market analysis for the 78704 zip code in Austin. Is it a buyer's or seller's market? Should I wait or buy now? What's the 6-month outlook?",
+                    "category": "Market Research",
+                    "agentType": "MarketIntelligenceAgent"
+                },
+                {
+                    "id": "rate-impact",
+                    "title": "📉 Interest Rate Impact",
+                    "description": "How rates affect your buying power",
+                    "query": "With mortgage rates at 6.5%, how does this affect my buying power? If I can afford $3,000/month, what price home can I buy? Should I wait for rates to drop?",
+                    "category": "Financing",
+                    "agentType": "MarketTrendsAgent"
+                },
+                {
+                    "id": "home-value-check",
+                    "title": "💰 Is This Home Fairly Priced?",
+                    "description": "Check if a listing is priced right",
+                    "query": "I found a home I like at 1234 Oak Street, Austin TX 78704. It's listed at $725,000 for a 4 bed, 2.5 bath, 2,400 sqft home built in 2015. Is this a fair price? What should I offer?",
+                    "category": "Offer Strategy",
+                    "agentType": "HomeValuationAgent"
+                },
+                {
+                    "id": "compare-neighborhoods",
+                    "title": "🗺️ Compare Neighborhoods",
+                    "description": "Side-by-side neighborhood comparison",
+                    "query": "I'm torn between Mueller (78723) and South Austin (78745) for my family. Compare these neighborhoods for schools, safety, commute to downtown, and home values. Which is better for a family with young kids?",
+                    "category": "Research",
+                    "agentType": "NeighborhoodExpertAgent"
+                },
+                {
+                    "id": "investment-buyer",
+                    "title": "🏦 Investment Property Analysis",
+                    "description": "ROI analysis for rental properties",
+                    "query": "I'm looking at a duplex in East Austin listed at $650,000. Each unit rents for $1,800/month. Is this a good investment? What's the cap rate and cash-on-cash return with 25% down?",
+                    "category": "Investment",
+                    "agentType": "MarketIntelligenceAgent"
+                }
+            ],
+            "availableCampaigns": [],
+            "visualizations": [],
+            "contextData": {
+                "userProfile": {
+                    "name": "Alex Thompson",
+                    "role": "Home Buyer",
+                    "status": "Pre-Approved",
+                    "preApprovalAmount": 650000,
+                    "downPayment": 130000,
+                    "targetAreas": [
+                        "Austin",
+                        "Round Rock",
+                        "Cedar Park"
+                    ],
+                    "timeline": "3-6 months",
+                    "buyerType": "First-Time Buyer"
+                },
+                "searchCriteria": {
+                    "priceRange": "$500K - $650K",
+                    "bedrooms": "3-4",
+                    "bathrooms": "2+",
+                    "sqftMin": 1800,
+                    "mustHaves": [
+                        "Good Schools",
+                        "Home Office",
+                        "Garage"
+                    ],
+                    "niceToHaves": [
+                        "Pool",
+                        "Updated Kitchen",
+                        "Large Yard"
+                    ]
+                },
+                "marketSnapshot": {
+                    "region": "Austin Metro",
+                    "date": "March 2026",
+                    "medianPrice": 525000,
+                    "priceChange": "+2.3% YoY",
+                    "avgDOM": 38,
+                    "inventory": "4.2 months",
+                    "marketType": "Balanced",
+                    "mortgageRate30yr": "6.45%"
+                },
+                "savedHomes": [
+                    {
+                        "address": "2847 Barton Hills Dr",
+                        "price": 625000,
+                        "beds": 4,
+                        "baths": 2.5,
+                        "sqft": 2200,
+                        "status": "Active",
+                        "notes": "Love the backyard"
+                    },
+                    {
+                        "address": "1523 Mueller Blvd",
+                        "price": 545000,
+                        "beds": 3,
+                        "baths": 2,
+                        "sqft": 1850,
+                        "status": "Active",
+                        "notes": "Great schools nearby"
+                    }
+                ],
+                "recentActivity": [
+                    {
+                        "action": "Viewed",
+                        "property": "2847 Barton Hills Dr",
+                        "date": "Mar 28"
+                    },
+                    {
+                        "action": "Saved",
+                        "property": "1523 Mueller Blvd",
+                        "date": "Mar 27"
+                    },
+                    {
+                        "action": "Toured",
+                        "property": "4521 Windsor Rd",
+                        "date": "Mar 25"
+                    }
+                ]
+            }
+        },
+        "agent-tab": {
+            "id": "agent-tab",
+            "title": "Real Estate Agent",
+            "description": "AI Tools for Real Estate Professionals",
+            "icon": "badge",
+            "defaultAgent": "RealtorOrchestratorAgent",
+            "availableAgents": [
+                "RealtorOrchestratorAgent",
+                "HomeValuationAgent",
+                "MarketIntelligenceAgent",
+                "ListingOptimizerAgent",
+                "DealPipelineAgent",
+                "MarketTrendsAgent",
+                "NeighborhoodExpertAgent"
+            ],
+            "scenarios": [
+                {
+                    "id": "deal-pipeline",
+                    "title": "📋 My Active Deals",
+                    "description": "Track transactions and manage your pipeline",
+                    "query": "Give me a status update on all my active deals. I have 3 buyers under contract and 2 listings pending. What are the critical deadlines this week?",
+                    "category": "Pipeline Management",
+                    "agentType": "DealPipelineAgent"
+                },
+                {
+                    "id": "home-valuation",
+                    "title": "💰 CMA / Home Valuation",
+                    "description": "Generate comparative market analysis",
+                    "query": "I need to prepare a CMA for a potential listing at 1234 Oak Street, Austin TX 78704. It's a 4 bed, 2.5 bath, 2,400 sqft home built in 2015 with a renovated kitchen and new roof (2023). What's the recommended list price?",
+                    "category": "Listing Services",
+                    "agentType": "HomeValuationAgent"
+                },
+                {
+                    "id": "listing-optimization",
+                    "title": "📈 Optimize My Listing",
+                    "description": "AI recommendations to improve listing performance",
+                    "query": "My listing at 456 Maple Ave has been on the market for 45 days with only 3 showings. It's priced at $725,000 for a 3,200 sqft home. Similar homes are selling in 20 days. What's wrong and how can I get more interest?",
+                    "category": "Listing Services",
+                    "agentType": "ListingOptimizerAgent"
+                },
+                {
+                    "id": "comp-analysis",
+                    "title": "🔍 Comparable Sales Analysis",
+                    "description": "Find recent sales to support pricing decisions",
+                    "query": "I need comps for a 3 bed, 2 bath, 1,800 sqft home in the Zilker neighborhood of Austin. Show me the 5 most relevant recent sales and help me determine a competitive list price.",
+                    "category": "Market Analysis",
+                    "agentType": "MarketIntelligenceAgent"
+                },
+                {
+                    "id": "market-report",
+                    "title": "📊 Market Report",
+                    "description": "Comprehensive market intelligence",
+                    "query": "Give me a detailed market analysis for the 78704 zip code. I need current pricing trends, days on market, inventory levels, and how the market has changed over the past 6 months for a client presentation.",
+                    "category": "Market Analysis",
+                    "agentType": "MarketIntelligenceAgent"
+                },
+                {
+                    "id": "pricing-strategy",
+                    "title": "🎯 Pricing Strategy",
+                    "description": "Optimal pricing recommendations",
+                    "query": "I have a new listing coming up - a 4BR/3BA, 2,800 sqft home in Westlake. The sellers want to list at $1.2M but I think that's too high. Help me build a pricing strategy with data to present to them.",
+                    "category": "Listing Services",
+                    "agentType": "HomeValuationAgent"
+                },
+                {
+                    "id": "buyer-consultation",
+                    "title": "👥 Buyer Consultation Prep",
+                    "description": "Prepare for buyer meetings",
+                    "query": "I have a buyer consultation tomorrow with a family looking in the $600K-$750K range in Austin. They want good schools and a short commute to the Domain. What neighborhoods should I recommend and what market data should I share?",
+                    "category": "Buyer Services",
+                    "agentType": "NeighborhoodExpertAgent"
+                },
+                {
+                    "id": "investment-analysis",
+                    "title": "🏦 Investment Property Analysis",
+                    "description": "ROI analysis for investor clients",
+                    "query": "My investor client is looking at a duplex in East Austin listed at $650,000. Each unit rents for $1,800/month. Prepare an investment analysis with cap rate, cash-on-cash return, and recommendation.",
+                    "category": "Investment",
+                    "agentType": "MarketIntelligenceAgent"
+                },
+                {
+                    "id": "rate-impact-agent",
+                    "title": "📉 Rate Impact Analysis",
+                    "description": "How rates affect your clients",
+                    "query": "With mortgage rates at 6.5%, how should I be advising my buyers? What's the outlook for the next 6 months? Should they buy now or wait?",
+                    "category": "Market Trends",
+                    "agentType": "MarketTrendsAgent"
+                },
+                {
+                    "id": "weekly-tasks",
+                    "title": "📅 This Week's Priorities",
+                    "description": "Critical tasks and deadlines",
+                    "query": "What are my critical tasks and deadlines for this week? I need to prioritize my time between my active listings, pending deals, and buyer clients.",
+                    "category": "Pipeline Management",
+                    "agentType": "DealPipelineAgent"
+                }
+            ],
+            "availableCampaigns": [],
+            "visualizations": [],
+            "contextData": {
+                "userProfile": {
+                    "name": "Sarah Mitchell",
+                    "role": "Licensed Real Estate Agent",
+                    "company": "Austin Premier Realty",
+                    "license": "TX-0654321",
+                    "specializations": [
+                        "Residential",
+                        "First-Time Buyers",
+                        "Investment Properties"
+                    ],
+                    "serviceAreas": [
+                        "Austin",
+                        "Round Rock",
+                        "Cedar Park",
+                        "Pflugerville"
+                    ],
+                    "yearsExperience": 8,
+                    "activeListings": 6,
+                    "pendingDeals": 4,
+                    "ytdClosings": 28,
+                    "ytdVolume": 14500000
+                },
+                "marketSnapshot": {
+                    "region": "Austin Metro",
+                    "date": "March 2026",
+                    "medianPrice": 525000,
+                    "priceChange": "+2.3% YoY",
+                    "avgDOM": 38,
+                    "inventory": "4.2 months",
+                    "marketType": "Balanced",
+                    "mortgageRate30yr": "6.45%"
+                },
+                "activeListings": [
+                    {
+                        "address": "2847 Barton Hills Dr",
+                        "zipCode": "78704",
+                        "price": 725000,
+                        "beds": 4,
+                        "baths": 2.5,
+                        "sqft": 2400,
+                        "dom": 12,
+                        "showings": 8,
+                        "status": "Active"
+                    },
+                    {
+                        "address": "1523 E 7th St",
+                        "zipCode": "78702",
+                        "price": 585000,
+                        "beds": 3,
+                        "baths": 2,
+                        "sqft": 1650,
+                        "dom": 5,
+                        "showings": 12,
+                        "status": "Active"
+                    },
+                    {
+                        "address": "4521 Mueller Blvd",
+                        "zipCode": "78723",
+                        "price": 545000,
+                        "beds": 3,
+                        "baths": 2,
+                        "sqft": 1800,
+                        "dom": 28,
+                        "showings": 4,
+                        "status": "Price Reduced"
+                    }
+                ],
+                "activeBuyers": [
+                    {
+                        "name": "The Johnson Family",
+                        "budget": "$550K-$650K",
+                        "criteria": "4BR, good schools",
+                        "status": "Under Contract"
+                    },
+                    {
+                        "name": "Michael Chen",
+                        "budget": "$400K-$500K",
+                        "criteria": "Investment duplex",
+                        "status": "Actively Searching"
+                    },
+                    {
+                        "name": "Emma & David Wilson",
+                        "budget": "$700K-$850K",
+                        "criteria": "4BR, Westlake schools",
+                        "status": "Just Starting"
+                    }
+                ],
+                "pendingTransactions": [
+                    {
+                        "address": "1847 Kinney Ave",
+                        "price": 695000,
+                        "client": "Johnson Family",
+                        "role": "Buyer Agent",
+                        "closingDate": "2026-04-15",
+                        "nextMilestone": "Appraisal - Apr 5"
+                    },
+                    {
+                        "address": "3421 Windsor Rd",
+                        "price": 825000,
+                        "client": "Robert Martinez",
+                        "role": "Listing Agent",
+                        "closingDate": "2026-04-22",
+                        "nextMilestone": "Inspection Response - Apr 4"
+                    }
+                ],
+                "upcomingTasks": [
+                    {
+                        "task": "Appraisal - 1847 Kinney Ave",
+                        "date": "Apr 5",
+                        "priority": "High"
+                    },
+                    {
+                        "task": "Open House - 2847 Barton Hills",
+                        "date": "Apr 6",
+                        "priority": "Medium"
+                    },
+                    {
+                        "task": "Buyer Consultation - Chen",
+                        "date": "Apr 7",
+                        "priority": "Medium"
+                    },
+                    {
+                        "task": "Closing - 1847 Kinney Ave",
+                        "date": "Apr 15",
+                        "priority": "High"
+                    }
+                ]
+            }
+        }
+    }
+}

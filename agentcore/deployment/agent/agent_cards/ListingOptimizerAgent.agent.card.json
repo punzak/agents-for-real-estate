@@ -1,0 +1,17 @@
+{
+  "name": "ListingOptimizerAgent",
+  "description": "Optimizes listing performance with pricing and marketing recommendations.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/listingoptimizeragent",
+  "skills": [
+    "listing_optimization",
+    "pricing_strategy",
+    "marketing_analysis"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

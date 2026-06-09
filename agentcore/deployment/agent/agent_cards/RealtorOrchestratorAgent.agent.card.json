@@ -1,0 +1,17 @@
+{
+  "name": "RealtorOrchestratorAgent",
+  "description": "Main orchestrator that routes real estate queries to specialist agents.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/realtororchestratoragent",
+  "skills": [
+    "intent_routing",
+    "agent_coordination",
+    "context_management"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

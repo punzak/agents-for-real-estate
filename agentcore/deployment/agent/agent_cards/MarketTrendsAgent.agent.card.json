@@ -1,0 +1,17 @@
+{
+  "name": "MarketTrendsAgent",
+  "description": "Analyzes interest rates and economic factors affecting real estate.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/markettrendsagent",
+  "skills": [
+    "rate_analysis",
+    "economic_forecasting",
+    "market_timing"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}

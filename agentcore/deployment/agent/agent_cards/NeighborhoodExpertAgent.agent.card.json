@@ -1,0 +1,17 @@
+{
+  "name": "NeighborhoodExpertAgent",
+  "description": "Provides deep neighborhood insights including schools, safety, and amenities.",
+  "url": "https://runtime.bedrock-agentcore.amazonaws.com/neighborhoodexpertagent",
+  "skills": [
+    "neighborhood_analysis",
+    "school_ratings",
+    "lifestyle_matching"
+  ],
+  "protocol": "A2A",
+  "version": "1.0",
+  "metadata": {
+    "domain": "real_estate",
+    "category": "realtor",
+    "deployment": "bedrock-agentcore"
+  }
+}
